@@ -12545,11 +12545,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\resobyte\\Source\\repos\\TicketSystem\\TicketSystem.Data\\TicketSystem.Data.csproj",
+      "projectUniqueName": "C:\\Users\\resobyte\\Desktop\\LittleTicketSystem\\TicketSystem\\TicketSystem.Data\\TicketSystem.Data.csproj",
       "projectName": "TicketSystem.Data",
-      "projectPath": "C:\\Users\\resobyte\\Source\\repos\\TicketSystem\\TicketSystem.Data\\TicketSystem.Data.csproj",
+      "projectPath": "C:\\Users\\resobyte\\Desktop\\LittleTicketSystem\\TicketSystem\\TicketSystem.Data\\TicketSystem.Data.csproj",
       "packagesPath": "C:\\Users\\resobyte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\resobyte\\Source\\repos\\TicketSystem\\TicketSystem.Data\\obj\\",
+      "outputPath": "C:\\Users\\resobyte\\Desktop\\LittleTicketSystem\\TicketSystem\\TicketSystem.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
