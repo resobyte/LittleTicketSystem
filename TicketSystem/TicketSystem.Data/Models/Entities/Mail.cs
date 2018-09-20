@@ -12,5 +12,7 @@ namespace TicketSystem.Data.Models.Entities
         public int MailTitle { get; set; }
 
         public int MailDescription { get; set; }
+
+        public virtual Users UserID { get; set; }
     }
 }

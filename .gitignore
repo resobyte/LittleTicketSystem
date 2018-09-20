@@ -49,3 +49,5 @@ TicketSystem/TicketSystem.Data/obj/TicketSystem.Data.csproj.nuget.cache
 TicketSystem/TicketSystem.Data/obj/TicketSystem.Data.csproj.nuget.g.props
 TicketSystem/TicketSystem.Data/obj/Debug/netcoreapp2.0/TicketSystem.Data.csproj.CoreCompileInputs.cache
 TicketSystem/TicketSystem.Data/obj/Debug/netcoreapp2.0/TicketSystem.Data.csproj.CoreCompileInputs.cache
+TicketSystem/.vs/TicketSystem/v15/Server/sqlite3/storage.ide
+TicketSystem/.vs/TicketSystem/v15/.suo

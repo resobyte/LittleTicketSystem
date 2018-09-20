@@ -11,6 +11,6 @@ namespace TicketSystem.Data.Models.Entities
 
         public int AdminUserName { get; set; }
 
-        public int AdminPassword { get; set; }
+        public int AdminPassword { get; set; }//
     }
 }

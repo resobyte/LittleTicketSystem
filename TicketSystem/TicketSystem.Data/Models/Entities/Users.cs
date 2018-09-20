@@ -13,7 +13,7 @@ namespace TicketSystem.Data.Models.Entities
 
         public string UserPassword { get; set; }
 
-        public string UserEmail { get; set; }// Diğer modelden gelecek
+        public string UserEmail { get; set; }
 
         public string UserLastIP { get; set; }
 
@@ -23,6 +23,6 @@ namespace TicketSystem.Data.Models.Entities
 
         public string UserPhoneNumber { get; set; }
 
-        //DEPARTMAN GELECEK
+        public virtual Departments DeparmentID { get; set; }
     }
 }

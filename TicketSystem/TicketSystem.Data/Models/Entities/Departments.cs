@@ -10,5 +10,7 @@ namespace TicketSystem.Data.Models.Entities
         public int ID { get; set; }
 
         public string DepartmentName { get; set; }
+
+        //
     }
 }

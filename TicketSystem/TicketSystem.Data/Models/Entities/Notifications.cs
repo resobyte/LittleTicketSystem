@@ -15,6 +15,7 @@ namespace TicketSystem.Data.Models.Entities
 
         public int NotificationDescription { get; set; }
 
+        public virtual Users UserID { get; set; }
 
     }
 }

@@ -19,5 +19,15 @@ namespace TicketSystem.Data.Data
         }
         
         public DbSet<Tickets> Tickets { get; set; }
+
+        public DbSet<Tickets> Admin { get; set; }
+
+        public DbSet<Tickets> Deparments { get; set; }
+
+        public DbSet<Tickets> Mail { get; set; }
+
+        public DbSet<Tickets> Notification{ get; set; }
+
+        public DbSet<Tickets> Users { get; set; }
     }
 }

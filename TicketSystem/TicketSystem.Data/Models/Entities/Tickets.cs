@@ -19,14 +19,14 @@ namespace TicketSystem.Data.Models.Entities
 
         public int UpdateDate { get; set; }
 
-        public int UpdateUser { get; set; }
+        public int UpdateUser { get; set; }//
 
-        public int CreateUser { get; set; }
+        public int CreateUser { get; set; }//
 
-        public int AssignUser { get; set; }
+        public int AssignUser { get; set; }//
 
         public int AssignDate { get; set; }
 
-        //USER GELECEK
+        public virtual Users UserID { get; set; }
     }
 }
