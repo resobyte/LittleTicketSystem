@@ -20,14 +20,14 @@ namespace TicketSystem.Data.Data
         
         public DbSet<Tickets> Tickets { get; set; }
 
-        public DbSet<Tickets> Admin { get; set; }
+        public DbSet<Admin> Admin { get; set; }
 
-        public DbSet<Tickets> Deparments { get; set; }
+        public DbSet<Departments> Deparments { get; set; }
 
-        public DbSet<Tickets> Mail { get; set; }
+        public DbSet<Mail> Mail { get; set; }
 
-        public DbSet<Tickets> Notification{ get; set; }
+        public DbSet<Notifications> Notifications { get; set; }
 
-        public DbSet<Tickets> Users { get; set; }
+        public DbSet<Users> Users { get; set; }
     }
 }

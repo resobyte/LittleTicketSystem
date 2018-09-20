@@ -51,3 +51,15 @@ TicketSystem/TicketSystem.Data/obj/Debug/netcoreapp2.0/TicketSystem.Data.csproj.
 TicketSystem/TicketSystem.Data/obj/Debug/netcoreapp2.0/TicketSystem.Data.csproj.CoreCompileInputs.cache
 TicketSystem/.vs/TicketSystem/v15/Server/sqlite3/storage.ide
 TicketSystem/.vs/TicketSystem/v15/.suo
+TicketSystem/TicketSystem.API/bin/Debug/netcoreapp2.0/TicketSystem.API.deps.json
+TicketSystem/TicketSystem.API/bin/Debug/netcoreapp2.0/TicketSystem.API.dll
+TicketSystem/TicketSystem.API/bin/Debug/netcoreapp2.0/TicketSystem.API.pdb
+TicketSystem/TicketSystem.API/bin/Debug/netcoreapp2.0/TicketSystem.API.runtimeconfig.dev.json
+TicketSystem/TicketSystem.API/bin/Debug/netcoreapp2.0/TicketSystem.API.runtimeconfig.json
+TicketSystem/TicketSystem.API/obj/Debug/netcoreapp2.0/TicketSystem.API.csproj.FileListAbsolute.txt
+TicketSystem/TicketSystem.API/obj/Debug/netcoreapp2.0/TicketSystem.API.csprojResolveAssemblyReference.cache
+TicketSystem/TicketSystem.API/obj/Debug/netcoreapp2.0/TicketSystem.API.dll
+TicketSystem/TicketSystem.API/obj/Debug/netcoreapp2.0/TicketSystem.API.pdb
+TicketSystem/TicketSystem.Data/appsettings.json
+TicketSystem/TicketSystem.Data/bin/Debug/netcoreapp2.0/TicketSystem.Data.dll
+TicketSystem/TicketSystem.Data/bin/Debug/netcoreapp2.0/TicketSystem.Data.pdb
