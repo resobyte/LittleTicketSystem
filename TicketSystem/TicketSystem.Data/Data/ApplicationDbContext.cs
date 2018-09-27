@@ -22,7 +22,7 @@ namespace TicketSystem.Data.Data
 
         public DbSet<Admin> Admin { get; set; }
 
-        public DbSet<Departments> Deparments { get; set; }
+        public DbSet<Departments> Departments { get; set; }
 
         public DbSet<Mail> Mail { get; set; }
 

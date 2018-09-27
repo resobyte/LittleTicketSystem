@@ -20,3 +20,14 @@ C:\Users\resobyte\Desktop\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\
 C:\Users\resobyte\Desktop\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.AssemblyInfo.cs
 C:\Users\resobyte\Desktop\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.dll
 C:\Users\resobyte\Desktop\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.pdb
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\bin\Debug\netcoreapp2.0\TicketSystem.Data.deps.json
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\bin\Debug\netcoreapp2.0\TicketSystem.Data.runtimeconfig.json
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\bin\Debug\netcoreapp2.0\TicketSystem.Data.runtimeconfig.dev.json
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\bin\Debug\netcoreapp2.0\TicketSystem.Data.dll
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\bin\Debug\netcoreapp2.0\TicketSystem.Data.pdb
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.csprojAssemblyReference.cache
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.AssemblyInfoInputs.cache
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.AssemblyInfo.cs
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.dll
+C:\Users\machine\Documents\GitHub\LittleTicketSystem\TicketSystem\TicketSystem.Data\obj\Debug\netcoreapp2.0\TicketSystem.Data.pdb

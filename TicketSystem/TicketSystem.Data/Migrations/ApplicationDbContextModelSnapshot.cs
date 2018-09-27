@@ -43,7 +43,7 @@ namespace TicketSystem.Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Deparments");
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("TicketSystem.Data.Models.Entities.Mail", b =>
