@@ -12,6 +12,8 @@ namespace TicketSystem.API.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        //TICKETS API'S
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -28,7 +30,7 @@ namespace TicketSystem.API.Controllers
 
         // POST api/values
         [HttpPost]
-        public string Post()//[FromBody]string value    
+        public string Post(string name)//[FromBody]string value    
         {
             return "post işlemi yapılıyor..";
         }
@@ -45,17 +47,8 @@ namespace TicketSystem.API.Controllers
         {
         }
 
-        public void setTickets(Tickets _ticket) : base("Tickets")
-        {
-            using(DbContext dbContext = new DbContext())
-            {
-                var dataTicketQuery=new DbContext.Tickets
 
-
-            }
-
-            
-        }
+        //DE
 
 
     }
