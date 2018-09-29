@@ -7,14 +7,14 @@ using TicketSystem.API.Models.DB;
 
 namespace TicketSystem.API.DbProcess
 {
-    public class DepartmentsApi:DbContext
+    public class DepartmentsApi
     {
 
         LittleTicketSystemContext _contextDepartments = new LittleTicketSystemContext();
 
 
 
-        public void setDepartments(DepartmentsApi _department)
+        public void setDepartments(Departments _department)
         {
             _contextDepartments.Departments.Add(_department);
 

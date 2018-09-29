@@ -11,12 +11,27 @@ namespace TicketSystem.API.DbProcess
 
         LittleTicketSystemContext _contextTickets = new LittleTicketSystemContext();
 
-        public void setTickets(Tickets _ticket)
+        public void addTicket(Tickets _ticket)
         {
             _contextTickets.Tickets.Add(_ticket);
 
+        }
+
+        public List<Tickets> getTickets()
+        {
+            var ticketsList = new List<Tickets>();
+            ticketsList = _contextTickets.Tickets.ToList();
+
+            return ticketsList;
+        }
+
+        public void putTicket(Tickets _ticket)
+        {
 
         }
+
+
+
 
 
 
