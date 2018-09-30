@@ -21,35 +21,44 @@ namespace TicketSystem.API.Controllers
 
         // GET api/page
         [HttpGet]
-        public IEnumerable<string> GetTickets()
+        public string GetTickets()
         {
-            return new string[] { "value1", "value2" };
+            TicketsApi ticketsApi = new TicketsApi();
+
+            var jsonData = JsonConvert.SerializeObject(ticketsApi.GetTickets());
+
+            return jsonData;
         }
 
         // GET api/page/5
         [HttpGet("{id}")]
         public string GetTicket(int id)
         {
-            return "value";
-        }
+            TicketsApi ticketsApi = new TicketsApi();
 
-        // POST api/page
-        [HttpPost]
-        public string SetTicket(string name)//[FromBody]string value    
-        {
-            return "post işlemi yapılıyor..";
-        }
+            var jsonData = JsonConvert.SerializeObject(ticketsApi.GetTicket(id));
 
+            return jsonData;
+
+        }
+        
         // PUT api/page/5
         [HttpPut("{id}")]
-        public void PutTicket(int id, [FromBody]string value)
+        public void UpdateTicket(Tickets ticket)
         {
+            TicketsApi ticketApi = new TicketsApi();
+
+            ticketApi.UpdateTicket(ticket);
+
         }
 
         // DELETE api/page/5
         [HttpDelete("{id}")]
-        public void DeleteTicket(int id)
+        public void DeleteTicket(int id,string title)
         {
+            TicketsApi ticketApi = new TicketsApi();
+
+            ticketApi.DeleteTicket(id, title);
         }
         #endregion
 
@@ -83,6 +92,10 @@ namespace TicketSystem.API.Controllers
         {
             //var ip = HttpContext.Features.Get<IHttpConnectionFeature>()?.RemoteIpAddress?.ToString();
             UsersApi userApi = new UsersApi();
+
+            userApi.AddUsers(user);
+
+            /*
             Users user1 = new Users();
 
             user1.UserEmail = user.UserEmail;
@@ -95,7 +108,7 @@ namespace TicketSystem.API.Controllers
             user1.UserPassword = user.UserPassword!="" ? "1234" : "000";
 
             userApi.AddUsers(user1);
-
+            */
         }
 
         // PUT api/page/5
@@ -116,6 +129,8 @@ namespace TicketSystem.API.Controllers
         }
 
         #endregion
+
+
         #region UserFunction
 
         public string LokalIP()
@@ -150,6 +165,7 @@ namespace TicketSystem.API.Controllers
 
 
         #endregion
+
 
         #region Departmets
         //TICKETS API'S

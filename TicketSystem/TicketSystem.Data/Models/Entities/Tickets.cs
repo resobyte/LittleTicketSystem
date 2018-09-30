@@ -13,11 +13,11 @@ namespace TicketSystem.Data.Models.Entities
 
         public string TicketDescription { get; set; }
 
-        public int CreateDate { get; set; }
+        public string CreateDate { get; set; }
 
         public string Status { get; set; }
 
-        public int UpdateDate { get; set; }
+        public string UpdateDate { get; set; }
 
         public int UpdateUser { get; set; }//
 
@@ -25,7 +25,7 @@ namespace TicketSystem.Data.Models.Entities
 
         public int AssignUser { get; set; }//
 
-        public int AssignDate { get; set; }
+        public string AssignDate { get; set; }
 
         public virtual Users UserID { get; set; }
     }
