@@ -45,7 +45,7 @@ namespace TicketSystem.API.DbProcess
             var ticketQuery = _contextTickets.Tickets.Where(t => t.Id == id);
             var ticket = ticketQuery.FirstOrDefault();
 
-            return ticket;
+            return ticket!=null?ticket:null;
         }
 
         public void UpdateTicket(Tickets ticket)

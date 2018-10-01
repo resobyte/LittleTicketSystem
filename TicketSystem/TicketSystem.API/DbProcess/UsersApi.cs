@@ -49,7 +49,7 @@ namespace TicketSystem.API.DbProcess
             Users user = new Users();
             user = _contextUsers.Users.FirstOrDefault(u => u.Id == id);
 
-            return user;
+            return user!=null?user:null;
         }
 
         public void UpdateUser(Users user)

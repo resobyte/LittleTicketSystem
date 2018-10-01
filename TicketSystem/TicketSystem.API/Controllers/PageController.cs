@@ -70,8 +70,8 @@ namespace TicketSystem.API.Controllers
         [HttpGet]
         public string GetUsers()
         {
-            UsersApi users = new UsersApi();
-            var jsonData = JsonConvert.SerializeObject(users.GetUsers());
+            UsersApi userApi = new UsersApi();
+            var jsonData = JsonConvert.SerializeObject(userApi.GetUsers());
 
             return jsonData;
         }
@@ -172,35 +172,52 @@ namespace TicketSystem.API.Controllers
 
         // GET api/page
         [HttpGet]
-        public IEnumerable<string> GetDepartmets()
+        public string GetDepartmets()
         {
-            return new string[] { "value1", "value2" };
+            DepartmentsApi departmentApi = new DepartmentsApi();
+
+            var jsonData = JsonConvert.SerializeObject(departmentApi.GetDepartments());
+
+            return jsonData;
         }
 
         // GET api/page/5
         [HttpGet("{id}")]
         public string GetDepartmet(int id)
         {
-            return "value";
+            DepartmentsApi departmentApi = new DepartmentsApi();
+
+            var jsonData = JsonConvert.SerializeObject(departmentApi.GetDepartment(id));
+
+            return jsonData;
         }
 
         // POST api/page
         [HttpPost]
-        public string SetDepartmet(string name)//[FromBody]string value    
+        public void AddDepartmet(Departments department)//[FromBody]string value    
         {
-            return "post işlemi yapılıyor..";
+            DepartmentsApi departmentApi = new DepartmentsApi();
+
+            departmentApi.AddDepartment(department);
+
         }
 
         // PUT api/page/5
         [HttpPut("{id}")]
-        public void PutDepartmets(int id, [FromBody]string value)
+        public void UpdateDepartmets(Departments department)
         {
+            DepartmentsApi departmentsApi = new DepartmentsApi();
+
+            departmentsApi.UpdateDepartment(department);
         }
 
         // DELETE api/page/5
         [HttpDelete("{id}")]
-        public void DeleteDepartmet(int id)
+        public void DeleteDepartmet(Departments department)
         {
+            DepartmentsApi departmentApi = new DepartmentsApi();
+
+            departmentApi.DeleteDepartment(department);
         }
 
         #endregion
