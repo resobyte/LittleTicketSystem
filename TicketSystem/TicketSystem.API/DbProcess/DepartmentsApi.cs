@@ -64,9 +64,9 @@ namespace TicketSystem.API.DbProcess
 
         }
 
-        public void DeleteDepartment(Departments department)
+        public void DeleteDepartment(int id)
         {
-            var departmentQuery = _contextDepartments.Departments.Where(d => d.Id == department.Id);
+            var departmentQuery = _contextDepartments.Departments.Where(d => d.Id == id);
             var dataEntity = departmentQuery.FirstOrDefault();
 
             if (dataEntity != null)

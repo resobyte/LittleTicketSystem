@@ -213,11 +213,11 @@ namespace TicketSystem.API.Controllers
 
         // DELETE api/page/5
         [HttpDelete("{id}")]
-        public void DeleteDepartmet(Departments department)
+        public void DeleteDepartmet(int id)
         {
             DepartmentsApi departmentApi = new DepartmentsApi();
 
-            departmentApi.DeleteDepartment(department);
+            departmentApi.DeleteDepartment(id);
         }
 
         #endregion
@@ -228,35 +228,53 @@ namespace TicketSystem.API.Controllers
 
         // GET api/page
         [HttpGet]
-        public IEnumerable<string> GetMails()
+        public string GetMails()
         {
-            return new string[] { "value1", "value2" };
+            MailApi mailApi = new MailApi();
+            var jsonData=JsonConvert.SerializeObject(mailApi.GetMails());
+
+            return jsonData;
+
         }
 
         // GET api/page/5
         [HttpGet("{id}")]
         public string GetMail(int id)
         {
-            return "value";
+            MailApi mailApi = new MailApi();
+            var jsonData = JsonConvert.SerializeObject(mailApi.GetMail(id));
+
+            return jsonData;
         }
 
         // POST api/page
         [HttpPost]
-        public string SetMail(string name)//[FromBody]string value    
+        public void AddMail(Mail mail)//[FromBody]string value    
         {
-            return "post işlemi yapılıyor..";
+            MailApi mailApi = new MailApi();
+
+            mailApi.AddMail(mail);
+
         }
 
         // PUT api/page/5
         [HttpPut("{id}")]
-        public void PutMail(int id, [FromBody]string value)
+        public void UpdateMail(Mail mail)
         {
+            MailApi mailApi = new MailApi();
+
+            mailApi.AddMail(mail);
+
         }
 
         // DELETE api/page/5
         [HttpDelete("{id}")]
         public void DeleteMail(int id)
         {
+
+            MailApi mailApi = new MailApi();
+
+            mailApi.DeleteMail(id);
         }
 
         #endregion
