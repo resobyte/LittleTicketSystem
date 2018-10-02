@@ -285,35 +285,69 @@ namespace TicketSystem.API.Controllers
 
         // GET api/page
         [HttpGet]
-        public IEnumerable<string> GetNotifications()
+        public string GetNotifications()
         {
-            return new string[] { "value1", "value2" };
+            NotificationsApi notificationApi = new NotificationsApi();
+
+            var jsonData = JsonConvert.SerializeObject(notificationApi.GetNotifications());
+
+            return jsonData;
+
         }
 
         // GET api/page/5
         [HttpGet("{id}")]
         public string GetNotification(int id)
         {
-            return "value";
+            NotificationsApi notificationApi = new NotificationsApi();
+
+            var jsonData = JsonConvert.SerializeObject(notificationApi.GetNotification(id));
+
+            return jsonData;
+
         }
 
         // POST api/page
         [HttpPost]
-        public string SetNotification(string name)//[FromBody]string value    
+        public void AddNotification(Notifications notification)//[FromBody]string value    
         {
-            return "post işlemi yapılıyor..";
+            NotificationsApi notificationApi = new NotificationsApi();
+
+            if (notification != null)
+            {
+                notificationApi.AddNotifications(notification);
+            }
+            
         }
 
         // PUT api/page/5
         [HttpPut("{id}")]
-        public void PutNotification(int id, [FromBody]string value)
+        public void UpdateNotification(Notifications notification)
         {
+            NotificationsApi notificationApi = new NotificationsApi();
+
+            if (notification != null)
+            {
+                notificationApi.UpdateNotification(notification);
+            }
         }
 
         // DELETE api/page/5
         [HttpDelete("{id}")]
         public void DeleteNotification(int id)
         {
+            NotificationsApi notificationApi = new NotificationsApi();
+            try
+            {
+
+                notificationApi.DeleteNotification(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                throw;
+            }
+
         }
 
         #endregion
