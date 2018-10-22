@@ -39,6 +39,17 @@ namespace TicketSystem.API.DbProcess
         {
             var userlist = new List<Users>();
             userlist = _contextUsers.Users.ToList();
+            /*
+            foreach (var user in userlist)
+            {
+                using (LittleTicketSystemContext _contextDepartment = new LittleTicketSystemContext())
+                {
+                    string department = _contextDepartment.Departments.Where(d => d.Id == user.DeparmentIdid).ToString();
+                    if(department!=null && department!="")
+                        user.departmentName=department
+                }
+            }
+            */
 
             return userlist;
         }
@@ -49,7 +60,7 @@ namespace TicketSystem.API.DbProcess
             Users user = new Users();
             user = _contextUsers.Users.FirstOrDefault(u => u.Id == id);
 
-            return user!=null?user:null;
+            return user != null ? user : null;
         }
 
         public void UpdateUser(Users user)

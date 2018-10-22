@@ -36,10 +36,17 @@ namespace TicketSystem.Core
             {
                 app.UseExceptionHandler("/Error");
             }
-
+            
             app.UseStaticFiles();
+            
+            app.UseMvc(routes=>
+            {
+                routes.MapRoute(
+                    name:"default",
+                    template:"{controller=Page}/{action=Userlogin}/{id?}"
+                    );
+            });
 
-            app.UseMvc();
         }
     }
 }

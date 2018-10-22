@@ -29,7 +29,7 @@ namespace TicketSystem.API.DbProcess
             }
 
 
-            _contextNotifications.Notifications.Add(_notification);
+            //_contextNotifications.Notifications.Add(newNotification);
 
         }
 
