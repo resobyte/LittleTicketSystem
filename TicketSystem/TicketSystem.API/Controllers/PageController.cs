@@ -10,10 +10,24 @@ using Microsoft.AspNetCore.Http.Features;
 
 namespace TicketSystem.API.Controllers
 {
+
     [Route("api/[controller]/[action]")]
     public class PageController : Controller
     {
+        #region Login
 
+        [HttpGet]
+        public string GetLogin(string userName,string userPassword)
+        {
+            UsersApi usersApi = new UsersApi();
+            string state= usersApi.GetLogin(userName, userPassword);
+
+
+            return state == "success" ? "success" : "failed";
+        }
+
+
+        #endregion
 
         #region Tickets
 

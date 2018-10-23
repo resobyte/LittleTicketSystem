@@ -10,6 +10,14 @@ namespace TicketSystem.API.DbProcess
     {
         LittleTicketSystemContext _contextUsers = new LittleTicketSystemContext();
 
+        public string GetLogin(string userName,string userPassword)
+        {
+            Users user = new Users();
+            user = _contextUsers.Users.FirstOrDefault(u => u.UserName == userName && u.UserPassword== userPassword);
+
+            return user != null ? "success" : "failed";
+        }
+
 
         public void AddUsers(Users user)
         {
